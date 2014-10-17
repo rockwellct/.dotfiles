@@ -1,9 +1,8 @@
 .dotfiles
 =========
 
-    # Install RCM
-    brew tap thoughtbot/formulae
-    brew install rcm
+    # Install "laptop"
+    bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) 2>&1 | tee ~/laptop.log
 
     # Install oh-my-zsh
     curl -L http://install.ohmyz.sh | sh
@@ -12,5 +11,5 @@
     git clone git@github.com:masonjm/.dotfiles.git
     rcup
 
-    # Install "laptop"
+    # Run laptop again
     bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) 2>&1 | tee ~/laptop.log
