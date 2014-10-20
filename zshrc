@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rails git ruby brew rbenv)
+plugins=(rails ruby brew rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,6 +72,8 @@ source ~/Projects/zsh-git-prompt/zshrc.sh
 PROMPT='%~%b$(git_super_status) %(?.%F{green}.%F{red})❯%f '
 
 export VISUAL=vim
+
+source ~/.aliases
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
