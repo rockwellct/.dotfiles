@@ -20,6 +20,7 @@
   pr = !gh pull-request
   st = status
   up = !git fetch origin && git rebase origin/master
+	unadd = reset HEAD
 [branch]
   autosetupmerge = always
   autosetuprebase = always
