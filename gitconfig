@@ -21,6 +21,7 @@
   st = status
   up = !git fetch origin && git rebase origin/master
 	unadd = reset HEAD
+  recommit = commit --amend --no-edit
 [branch]
   autosetupmerge = always
   autosetuprebase = always

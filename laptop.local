@@ -8,3 +8,8 @@ brew install brew-cask
 
 brew cask install google-chrome
 brew cask install dropbox
+
+mkdir -p ~/Projects
+cd ~/Projects
+[[ ! -d zsh-git-prompt ]] && git clone https://github.com/olivierverdier/zsh-git-prompt.git
+cd ~
