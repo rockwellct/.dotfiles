@@ -16,13 +16,14 @@
   ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
   merge-branch = !git checkout master && git merge @{-1}
-  purge-branches = !sh -c 'git pull && git checkout master && git branch --merged | grep -v master | xargs git delete-branch'  -
+  purge-branches = !sh -c 'git pull && git checkout master && git branch --merged | grep -v master | xargs -n 1 git delete-branch'  -
   pr = !gh pull-request
   st = status
   up = !git fetch origin && git pull && git rebase origin/master
   unadd = reset HEAD
   recommit = commit --amend --no-edit
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+  prep = rebase -i origin/master
 [branch]
   autosetupmerge = always
   autosetuprebase = always
