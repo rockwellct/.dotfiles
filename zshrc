@@ -102,3 +102,11 @@ source ~/.aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(rbenv init - zsh --no-rehash)"
+
+# Export boot2docker environment variables
+eval `boot2docker shellinit 2>/dev/null`
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+
+# itermocil command completion
+compctl -g '~/.teamocil/*(:t:r)' itermocil
