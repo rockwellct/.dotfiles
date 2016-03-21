@@ -23,7 +23,7 @@
   unadd = reset HEAD
   recommit = commit --amend --no-edit
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
-  prep = rebase -i origin/master
+  prep = ! git up && git rebase -i origin/master
 [branch]
   autosetupmerge = always
   autosetuprebase = always
