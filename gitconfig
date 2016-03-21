@@ -4,7 +4,7 @@
 [color]
   ui = true
 [push]
-	default = simple
+  default = simple
 [alias]
   aa = add --all
   ap = add --patch
@@ -22,7 +22,7 @@
   up = !git fetch origin && git pull && git rebase origin/master
   unadd = reset HEAD
   recommit = commit --amend --no-edit
-	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+  alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
   prep = ! git up && git rebase -i origin/master
 [branch]
   autosetupmerge = always
@@ -39,4 +39,4 @@
 [fetch]
   prune = true
 [rebase]
-	autosquash = true
+  autosquash = true
