@@ -8,7 +8,7 @@
     curl -L http://install.ohmyz.sh | sh
 
     # Install dotfiles
-    git clone git@github.com:masonjm/.dotfiles.git
+    git clone git@github.com:rockwellct/.dotfiles.git
     rcup
 
     # Run laptop again
