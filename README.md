@@ -1,6 +1,10 @@
 .dotfiles
 =========
-
+    
+    #Steps to take prior to beginning work with these scripts
+    #Install iTerm
+    #Install Xcode Developer Tools
+    
     # Install "laptop"
     bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) 2>&1 | tee ~/laptop.log
 
